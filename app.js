@@ -1,4 +1,3 @@
-const { json } = require('express');
 const express = require('express');
 const app = express();
 const fn = require('./functions');
@@ -8,7 +7,6 @@ const PORT = process.env.PORT || 8080;
 let visitasItems=0;
 let visitasRandom=0;
 
-express.json();
 
 app.get("/", (req, res) => {
     res.send("hola malo ql.");
